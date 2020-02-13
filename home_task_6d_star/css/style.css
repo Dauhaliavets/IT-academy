@@ -1,0 +1,15 @@
+div{
+    height: 78px;
+    width: 375px;
+}
+div span{
+    display: block;
+    height: 78px;
+    width: 75px;
+    float: right;
+    cursor: pointer;
+    background: url('../img/star0.png');
+}       
+div span:hover, div span:hover ~ span{
+    background: url('../img/star1.png');
+}

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Класс list__links */
+div.list__links ul{
+    list-style: none;
+}
+div.list__links li{
+    display: inline;
+    padding: 0 10px;
+    border-right: 2px solid #F00;
+}
+div.list__links li:last-child{
+    border: none;
+}
+div.list__links a:hover{
+    color: #f00;
+}
+
+/* Класс list__links__v2 */
+div.list__links__v2 ul{
+    list-style: none;
+}
+div.list__links__v2 li{
+    float: left;
+    padding: 0 10px;
+}
+div.list__links__v2 li:not(:last-child){
+    border-right: 2px solid #F00;
+}
+div.list__links__v2 a:hover{
+    color: #f00;
+}
+
+/* Класс clearfix */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Класс links__outside__list */
+div.links__outside__list a{
+    padding: 0 10px;
+    border-right: 2px solid #F00;
+}
+div.links__outside__list a:last-child{
+    border: none;
+}
+div.links__outside__list a:hover{
+    color: #f00;
+}
+
+/* Класс links__outside__list__v2 */
+div.links__outside__list__v2 a{
+    padding: 0 5px;
+}
+div.links__outside__list__v2 a:not(:first-child)::before{
+    content: "";
+    border-right: 2px solid #F00;
+}
