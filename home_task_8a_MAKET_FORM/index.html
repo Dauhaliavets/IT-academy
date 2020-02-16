@@ -10,20 +10,31 @@
 <body>
     <form action="http://fe.it-academy.by/TestForm.php" method="post" name="FORM_HT_8A">
         <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
-        <span>Название статьи:</span><input type="text" name="nameArticle" value="">
-        
+        <div class="article clearfix">
+            <label for="nameA">Название статьи:</label>
+            <div class="article__input">
+                <input type="text" name="nameArticle" id="nameA" value="">
+            </div>
+        </div>
         <span>Рубрика:</span>
         <select name="rubric">
             <option value="r1" selected>программирование</option>
-            <option value="r2">компьютерная графика</option>
+            <option value="r2">компьютерная графика</option> 
             <option value="r3">графика и дизайн</option>
-        </select><br>
-        <span>Публикация:</span>
-        <input type="radio" name="publicRadio" value="site">на сайте
-        <input type="radio" name="publicRadio" value="journal">в журнале
-        <input type="radio" name="publicRadio" value="siteJornal">на сайте и в журнале<br>
-        <span>Разрешить комментарии:</span><input type="checkbox" name="comments" checked><br>
-        <span>Текст статьи:</span><br>
+        </select> 
+            
+        <div class="public">
+            <label for="publicID">Публикация:</label>
+                <div class="public__input"><input type="radio" name="publicRadio" id="publicID" value="site">на сайте</div>
+                <div class="public__input"><input type="radio" name="publicRadio" id="publicID" value="journal">в журнале</div>
+                <div class="public__input"><input type="radio" name="publicRadio" id="publicID" value="siteJornal">на сайте и в журнале</div>       
+        </div>
+        <div class="comments">
+            <label for="commentsID">Разрешить комментарии:</label>
+            <input type="checkbox" id="commentsID" name="comments" checked>      
+        </div>
+        
+        <span>Текст статьи:</span>
         <textarea name="textArticle"></textarea><br>
         <input type="submit" name="send" value="Отправить">
 
