@@ -1,0 +1,87 @@
+.checkbox1{
+    position: relative;
+}
+.checkbox1 input{
+    visibility: hidden;
+}
+.checkbox1 input::before{
+    content: "";
+    visibility: visible;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/1.jpg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.checkbox1 input:hover::before{
+    background-position: -100px -100px;
+}
+.checkbox1 input:checked::before{
+    background-position: -200px -100px;
+}
+.checkbox1 input:not(:hover):checked::before{
+    background-position: 0px 0px;
+}
+.checkbox1 span{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.checkbox1 input:hover + span{
+    visibility: hidden;
+}
+.checkbox1 input:hover + span::before{
+    content: "Чтобы нанести удар, нажми на воина";
+    visibility: visible;
+}
+.checkbox1 input:checked + span::before{
+    content: "Ударить ещё??? Клацни";
+}
+.checkbox1 input:not(:hover) + span::before{
+    display: none;
+}
+
+/* checkbox2 */
+.checkbox2{
+    position: absolute;
+    top: 150px;
+}
+input.checkbox__show + label + p{
+    display: none;
+}
+input.checkbox__show:checked + label + p{
+    display: block;
+}
+
+/* radio1 */
+.radio1{
+    position: absolute;
+    top: 320px;
+}
+.radio1 input{
+    display: none;
+}
+.radio1 input + label{
+    float: left;
+    display: block;
+    height: 30px;
+    padding: 10px;
+    background-color: #7D7F7F;
+    border-radius: 15px 15px 0 0;
+}
+.radio1 input:checked + label{
+    background-color: #C3B8E5;
+}
+.radio1 input + label + div{
+    display: none;
+}
+.radio1 input:checked + label + div{
+    display: block;
+    position: absolute;
+    top: 50px;
+    background-color: #C3B8E5;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+
+}
