@@ -65,10 +65,12 @@ input.checkbox__show:checked + label + p{
 .radio1 input + label{
     float: left;
     display: block;
-    height: 30px;
-    padding: 10px;
+    padding: 10px 40px;
     background-color: #7D7F7F;
     border-radius: 15px 15px 0 0;
+}
+.radio1 input:first-child + label{
+    margin-right: 10px;
 }
 .radio1 input:checked + label{
     background-color: #C3B8E5;
@@ -79,7 +81,7 @@ input.checkbox__show:checked + label + p{
 .radio1 input:checked + label + div{
     display: block;
     position: absolute;
-    top: 50px;
+    top: 39px;
     background-color: #C3B8E5;
     border-radius: 0 0 15px 15px;
     padding: 10px;
