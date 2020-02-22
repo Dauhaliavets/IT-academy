@@ -1,3 +1,4 @@
+/* WARRIOR */
 .checkbox1{
     position: relative;
 }
@@ -23,24 +24,62 @@
 .checkbox1 input:not(:hover):checked::before{
     background-position: 0px 0px;
 }
+/* KILLER */
+input#killer::before{
+    display: none;
+}
+input#killer::after{
+   position: absolute;
+   top: 0;
+   left: 200px;
+   content: "";
+   visibility: visible;
+   display: block;
+   height: 100px;
+   width: 90px;
+   background: url('../img/2.jpg');
+   background-position: -309px 4px;
+   background-repeat: no-repeat;
+}
+.checkbox1 input:hover + input#killer::after{
+   background-position: -9px -97px;
+}
+.checkbox1 input:checked + input#killer::after{
+   background-position: -409px -97px;
+}
+.checkbox1 input:not(:hover):checked + input#killer::after{
+   background-position: -309px 4px;
+}
+/* HELP */
 .checkbox1 span{
     position: absolute;
     top: 50px;
-    left: 100px;
+    left: 400px;
 }
-.checkbox1 input:hover + span{
+input#warrior:hover ~ span{
     visibility: hidden;
 }
-.checkbox1 input:hover + span::before{
-    content: "Чтобы нанести удар, нажми на воина";
+input#warrior:hover ~ span::before{
     visibility: visible;
+    content: "Клацни мышью, чтобы нанести удар";
 }
-.checkbox1 input:checked + span::before{
-    content: "Ударить ещё??? Клацни";
+input#warrior:checked ~ span::after{
+    visibility: visible;
+    content: "Продолжай защищаться";
+    position: absolute;
+    left: 0;
 }
-.checkbox1 input:not(:hover) + span::before{
+input#warrior:checked ~ span::before{
     display: none;
 }
+input#warrior:not(:hover) ~ span::before, input#warrior:not(:hover) ~ span::after{
+    display: none;
+}
+
+
+
+
+
 
 /* checkbox2 */
 .checkbox2{
@@ -81,7 +120,7 @@ input.checkbox__show:checked + label + p{
 .radio1 input:checked + label + div{
     display: block;
     position: absolute;
-    top: 39px;
+    top: 37px;
     background-color: #C3B8E5;
     border-radius: 0 0 15px 15px;
     padding: 10px;
