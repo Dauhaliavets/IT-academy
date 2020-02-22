@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SVG</title>
+  </head>
+  <body>
+    <svg>
+      <symbol id="LIBE">
+        <line x1="0" y1="0" x2="50" y2="0" stroke="#ffd900" stroke-width="2" />
+      </symbol>
+      <rect
+        x="150"
+        y="200"
+        width="100"
+        height="100"
+        style="stroke:green; fill:rgb(116, 65, 0)"
+      />
+      <polygon
+        points="110,200 200,120, 290,200"
+        style="stroke:grey; fill:rgb(126, 93, 2)"
+      />
+      <rect
+        x="180"
+        y="230"
+        width="40"
+        height="40"
+        style="stroke:black; fill:yellow"
+      />
+      <circle cx="10" cy="10" r="40" style="stroke:#ffd900; fill:yellow" />
+      <use xlink:href="#LINE" x="60" y="10" />
+      <!-- <line
+        x1="58"
+        y1="25"
+        x2="100"
+        y2="35"
+        stroke="#ffd900"
+        stroke-width="2"
+      />
+      <line x1="56" y1="40" x2="95" y2="55" stroke="#ffd900" stroke-width="2" />
+      <line x1="46" y1="52" x2="90" y2="75" stroke="#ffd900" stroke-width="2" /> -->
+    </svg>
+  </body>
+</html>
