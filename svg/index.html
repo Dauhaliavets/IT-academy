@@ -8,8 +8,8 @@
   </head>
   <body>
     <svg>
-      <symbol id="LIBE">
-        <line x1="0" y1="0" x2="50" y2="0" stroke="#ffd900" stroke-width="2" />
+      <symbol id="LINE">
+        <line x1="0" y1="0" x2="50" y2="0" stroke="#ffd900" stroke-width="4" />
       </symbol>
       <rect
         x="150"
@@ -30,17 +30,12 @@
         style="stroke:black; fill:yellow"
       />
       <circle cx="10" cy="10" r="40" style="stroke:#ffd900; fill:yellow" />
-      <use xlink:href="#LINE" x="60" y="10" />
-      <!-- <line
-        x1="58"
-        y1="25"
-        x2="100"
-        y2="35"
-        stroke="#ffd900"
-        stroke-width="2"
-      />
-      <line x1="56" y1="40" x2="95" y2="55" stroke="#ffd900" stroke-width="2" />
-      <line x1="46" y1="52" x2="90" y2="75" stroke="#ffd900" stroke-width="2" /> -->
+      <use xlink:href="#LINE" x="60" y="8" />
+      <use xlink:href="#LINE" x="60" y="12" transform="rotate(13)"/>
+      <use xlink:href="#LINE" x="62" y="16" transform="rotate(26)"/>
+      <use xlink:href="#LINE" x="62" y="14" transform="rotate(42)"/>
+      <use xlink:href="#LINE" x="60" y="14" transform="rotate(58)"/>
+      <use xlink:href="#LINE" x="60" y="4" transform="rotate(80)"/>
     </svg>
   </body>
 </html>
