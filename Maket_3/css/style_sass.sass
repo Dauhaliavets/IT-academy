@@ -21,3 +21,76 @@
         margin-bottom: 108px
         margin-left: auto
         margin-right: auto
+    .meet_our_team_box
+        display: flex
+        justify-content: space-between
+        .team__item
+            position: relative
+            width: 270px
+            height: 300px
+            .foto
+                display: flex
+            .foto__hover
+                width: 270px
+                height: 300px
+                background: url('../img/meet-our-team/Rectangle_7.png')
+                position: absolute
+                top: 0
+                left: 0
+                opacity: 0
+                p 
+                    width: 270px
+                    color: #ffffff
+                    font-family: "Open Sans"
+                    font-size: 16px
+                    line-height: 24px
+                    text-align: center
+                    margin: 23px 0px 45px
+                    padding: 0px 26px
+                    span 
+                        font-family: "Open Sans"
+                        line-height: 32px
+                        font-weight: 700
+                .foto__hover__social
+                    display: flex
+                    justify-content: center
+                    .social_item
+                        height: 42px
+                        width: 42px
+                        background: url('../img/meet-our-team/foto-hover-social-rect.png')
+                        text-align: center
+                        vertical-align: center
+                        img
+                            margin-top: 10px
+                    .social_item:not(:last-child)
+                        margin-right: 4px
+            .foto__hover:hover
+                opacity: 1
+                cursor: pointer
+            .foto__hover:hover + .foto__about
+                h4 
+                    color: #0eb493    
+            .foto__about
+                h4 
+                    color: #062033
+                    font-family: "Open Sans"
+                    font-size: 18px
+                    font-weight: 400
+                    line-height: 24px
+                    text-align: center
+                    margin-top: 21px
+                    margin-bottom: 12px
+                p 
+                    margin: 0
+                    padding: 0
+                    opacity: 0.56
+                    color: #062033
+                    font-family: "Open Sans"
+                    font-size: 13px
+                    font-weight: 400
+                    line-height: 24px
+                    width: auto
+    .features__slider__dots
+        margin-top: 87px
+        margin-bottom: 120px
+            
