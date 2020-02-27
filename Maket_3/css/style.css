@@ -11,7 +11,7 @@ body {
   width: 1100px;
   margin: 0 auto;
 }
-.clearfix::before{
+.clearfix::before {
   content: "";
   display: block;
   clear: both;
@@ -20,6 +20,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/* -------------------================ LINE-HEART-LINE ===========------ */
+.line_heart_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line_heart_line img {
+  margin: 0px 15px;
+}
+.line {
+  width: 90px;
+  height: 1px;
+  background-color: #062033;
+  opacity: 0.1;
 }
 /* Section ------------============ HEADER ============------------ */
 .header__top {
@@ -97,7 +112,7 @@ header {
 .header__slider p > span {
   color: #0feb9e;
 }
-.header__slider p:nth-child(4){
+.header__slider p:nth-child(4) {
   opacity: 0.9;
   color: #ffffff;
   font-family: "Open Sans";
@@ -113,13 +128,13 @@ header {
   background-color: #0feb9e;
   display: inline-block;
 }
-.header__slider__dots{
+.header__slider__dots {
   position: absolute;
   top: 50%;
   right: 0px;
   margin-right: 48px;
 }
-.header__slider__dots .selected svg g{
+.header__slider__dots .selected svg g {
   opacity: 0.9;
 }
 .header__slider__dots .selected svg path {
@@ -127,10 +142,10 @@ header {
 }
 
 /* Section ------------============ FEATURES ============------------ */
-.features{
+.features {
   background-color: #f4f7f9;
 }
-.features h2{
+.features h2 {
   text-align: center;
   color: #0eb493;
   font-family: "Open Sans";
@@ -140,23 +155,24 @@ header {
   letter-spacing: -0.56px;
   padding: 77px 0px 25px;
 }
-.features_box{
+.features_box {
   display: flex;
   justify-content: space-between;
+  margin-top: 64px;
 }
-.features_box_item{
+.features_box_item {
   flex-basis: 356px;
 }
-.features_box_item img{
-  float: left;
+.features_box_item img {
+  vertical-align: bottom;
 }
-.features_box_item h3{
+.features_box_item h3 {
   margin: 3px 0px 22px 57px;
   color: #062033;
   font-family: "Open Sans";
   font-size: 20px;
 }
-.features_box_item p{
+.features_box_item p {
   margin-left: 56px;
   opacity: 0.7;
   color: #062033;
@@ -164,15 +180,15 @@ header {
   font-weight: 400;
   line-height: 21px;
 }
-.features__slider__dots{
+.features__slider__dots {
   display: flex;
   justify-content: center;
   padding: 80px 0px 54px;
 }
-.features__slider__dots .dot:nth-child(2){
+.features__slider__dots .dot:nth-child(2) {
   margin: 0px 15px;
 }
-.features__slider__dots .selected svg g{
+.features__slider__dots .selected svg g {
   opacity: 0.9;
 }
 .features__slider__dots .selected svg path {
@@ -180,7 +196,7 @@ header {
 }
 
 /* Section ------------============ WORKS ============------------ */
-.works h2{
+.works h2 {
   text-align: center;
   color: #0eb493;
   font-family: "Open Sans";
@@ -190,9 +206,9 @@ header {
   letter-spacing: -0.56px;
   padding: 77px 0px 25px;
 }
-.works p{
+.works p {
   width: 929px;
-  margin-top: 75px;
+  margin-top: 36px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -203,14 +219,58 @@ header {
   font-weight: 400;
   line-height: 24px;
 }
-.works__filter ul{
+.works__filter ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin: 48px 0px 37px;
 }
-.works_box{
+.works__filter ul li {
+  padding: 10px 21px 9px 18px;
+  margin-right: 8px;
+  color: #062033;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+}
+.works__filter ul li:hover {
+  background-color: #0eb493;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.works_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+.works_item:nth-child(1) {
+  background: url("../img/works/Layer_13.png");
+}
+.works_item:nth-child(2) {
+  background: url("../img/works/Layer_15.png");
+}
+.works_item:nth-child(3) {
+  background: url("../img/works/Layer_17.png");
+}
+.works_item:nth-child(4) {
+  background: url("../img/works/Layer_18.png");
+}
+.works_item:nth-child(5) {
+  background: url("../img/works/Layer_19.png");
+}
+.works_item:nth-child(6) {
+  background: url("../img/works/Layer_20.png");
+}
+.works_item:nth-child(7) {
+  background: url("../img/works/Layer_21.png");
+}
+.works_item:nth-child(8) {
+  background: url("../img/works/Layer_22.png");
+}
+.works_item {
+  /* display: flex; */
+  width: 400px;
+  height: 300px;
+}
+/* ----------------=================== MEET OUR TEAM =================-------------------- */
