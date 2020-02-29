@@ -91,4 +91,49 @@
   margin-top: 87px;
   margin-bottom: 120px; }
 
+.some_fun_facts {
+  background: url("../img/some-fun-facts/background/Rectangle_8_copy.png"), url("../img/some-fun-facts/background/Layer_29.png"), url("../img/some-fun-facts/background/Layer_28.png"), url("../img/some-fun-facts/background/Rectangle_8.png");
+  background-size: cover; }
+  .some_fun_facts h2 {
+    color: #0eb493;
+    font-family: "Open Sans";
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -0.56px;
+    text-align: center;
+    padding-top: 101px;
+    padding-bottom: 25px; }
+  .some_fun_facts .some_fun_facts_box {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .some_fun_facts .some_fun_facts_box .facts_item .circle {
+      height: 130px;
+      width: 130px;
+      background: url("../img/some-fun-facts/Circle.png");
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .some_fun_facts .some_fun_facts_box .facts_item p:first-of-type {
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 60px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 51px;
+      margin-bottom: 18px; }
+    .some_fun_facts .some_fun_facts_box .facts_item p:last-child {
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 158px; }
+    .some_fun_facts .some_fun_facts_box .facts_item:nth-child(2) .circle {
+      margin-left: 10px; }
+    .some_fun_facts .some_fun_facts_box .facts_item:nth-child(3) .circle {
+      margin-left: 20px; }
+
 /*# sourceMappingURL=style_sass.css.map */
