@@ -93,6 +93,7 @@ body {
 }
 header {
   background: url("../img/Slice_1.png");
+  background-size: cover;
 }
 .header__slider {
   text-align: center;
@@ -151,7 +152,25 @@ header {
 .header__slider__dots .selected svg path {
   fill: #fff;
 }
-
+.header__slider .social {
+  padding: 110px 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__slider .social img:not(:last-child) {
+  margin-right: 18px;
+}
+.header__slider .social img:not(:nth-child(3)) {
+  opacity: 0.8;
+}
+.header__slider .social img:nth-child(3) {
+  opacity: 0.5;
+}
+.header__slider .social img:hover {
+  cursor: pointer;
+  opacity: 1;
+}
 /* Section ------------============ FEATURES ============------------ */
 .features {
   background-color: #f4f7f9;
@@ -176,9 +195,10 @@ header {
 }
 .features_box_item img {
   vertical-align: bottom;
+  float: left;
 }
 .features_box_item h3 {
-  margin: 3px 0px 22px 57px;
+  margin: 0px 0px 22px 57px;
   color: #062033;
   font-family: "Open Sans";
   font-size: 20px;

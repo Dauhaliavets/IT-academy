@@ -88,6 +88,8 @@
       font-weight: 400;
       line-height: 24px;
       width: auto; }
+  .meet_our_team .meet_our_team_box .team__item:not(:last-child) {
+    margin-right: 30px; }
 .meet_our_team .features__slider__dots {
   margin-top: 87px;
   margin-bottom: 120px; }
