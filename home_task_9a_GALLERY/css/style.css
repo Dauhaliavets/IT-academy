@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
+  overflow-y: auto;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background: rgba(188, 224, 238, 0.64);
+  box-shadow: 21px 18px 40px 5px rgba(0, 0, 0, 0.62); }
+
+iframe {
+  height: 440px;
+  width: 600px; }
+
+a {
+  display: block;
+  margin: 0 0 20px 0; }
+
+/*# sourceMappingURL=style.css.map */
