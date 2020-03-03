@@ -1,0 +1,20 @@
+{
+  "name": "it-academy",
+  "version": "1.0.0",
+  "description": "Homework from the IT Academy",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --wacth home_task_9e_MAKET_FLEX/sass/style.sass home_task_9e_MAKET_FLEX/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dauhaliavets/IT-academy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dauhaliavets/IT-academy/issues"
+  },
+  "homepage": "https://github.com/Dauhaliavets/IT-academy#readme"
+}
