@@ -9,19 +9,124 @@ body header {
 }
 body header h1 {
   color: #001CF5;
-  font-size: 12px;
+  font-size: 42px;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 body main {
   display: flex;
 }
 body main nav {
   background-color: #F0E78D;
-  padding: 20px 10px;
+  padding: 20px 20px;
+  flex: 1 5 200px;
+}
+body main nav h4 {
+  font-size: 26px;
+  color: #030203;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+body main nav ul {
+  list-style: disc;
+}
+body main nav ul li {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+body main nav ul li a {
+  color: #0D0DF2;
 }
 body main section {
   background-color: #FFFFFF;
-  background: url("../img/ball.png") no-repeat top right;
+  background: url("../img/ball.png") repeat-y top right;
   padding: 20px 10px;
+  flex: 5 1 400px;
+}
+body main section h3 {
+  font-size: 32px;
+  color: #030203;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+body main section img {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+body footer {
+  background-color: #AED9E7;
+}
+body footer h2 {
+  color: #001CF5;
+  font-size: 42px;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 1100px) {
+  body main section img {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media all and (max-width: 870px) {
+  body header h1 {
+    font-size: 24px;
+  }
+  body main nav h4 {
+    font-size: 20px;
+  }
+  body main section h3 {
+    font-size: 22px;
+  }
+  body main section img {
+    width: 265px;
+    height: 165px;
+  }
+  body footer h2 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 690px) {
+  body header h1 {
+    font-size: 20px;
+  }
+  body main {
+    flex-direction: column-reverse;
+  }
+  body main nav h4 {
+    font-size: 16px;
+  }
+  body main section h3 {
+    font-size: 18px;
+  }
+  body footer h2 {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 320px) {
+  body header {
+    display: none;
+  }
+  body main nav {
+    background-color: #f1ebaed9;
+    padding: 10px 10px;
+  }
+  body main nav ul {
+    list-style: none;
+  }
+  body main nav ul li {
+    float: left;
+    margin-right: 10px;
+  }
+  body footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
