@@ -4,7 +4,7 @@
   "description": "Homework from the IT Academy",
   "main": "index.js",
   "scripts": {
-    "style": "sass --wacth home_task_9e_MAKET_FLEX/sass/style.sass home_task_9e_MAKET_FLEX/sass/style.css",
+    "style": "sass --watch home_task_9e_MAKET_FLEX/sass/style.sass home_task_9e_MAKET_FLEX/sass/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
