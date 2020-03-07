@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="number">
+      <input type="button" value="1" onclick="setNumber(1)" />
+      <input type="button" value="2" onclick="setNumber(2)" />
+      <input type="button" value="3" onclick="setNumber(3)" />
+      <input type="button" value="4" onclick="setNumber(4)" />
+      <input type="button" value="5" onclick="setNumber(5)" />
+      <input type="button" value="6" onclick="setNumber(6)" />
+      <input type="button" value="7" onclick="setNumber(7)" />
+      <input type="button" value="8" onclick="setNumber(8)" />
+      <input type="button" value="9" onclick="setNumber(9)" />
+      <input type="button" value="0" onclick="setNumber(0)" />
+    </div>
+    <div class="operators">
+      <input type="button" value="+" onclick="setOperator('+')" />
+      <input type="button" value="-" onclick="setOperator('-')" />
+      <input type="button" value="*" onclick="setOperator('*')" />
+      <input type="button" value="/" onclick="setOperator('/')" />
+      <input type="button" value="Result" onclick="result()" />
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
